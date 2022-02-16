@@ -26,13 +26,13 @@ public class highcardlowcard {
                 score++;
             //take in user input
             System.out.println("I have drawn two cards from a set 1 through 10.\n" 
-                    + "The first card is"+card1+".\n" 
+                    + "The first card is "+card1+".\n" 
                     + "Do you think the next card is:\n" 
-                    + "1 - Higher or 2 - Lower?\n");
+                    + "1 - Higher or 2 - Lower?");
             //adapt output to user input and score
-            
+            String numb = keyIn.nextLine();
             int card2;
-            if (keyIn.nextLine().equals("1")) {
+            if (numb.equals("1")) {
                 if(!playerPoint)
                 {
                     do{card2 = random.nextInt(card1)+2;}while(card2>=card1);
@@ -45,7 +45,7 @@ public class highcardlowcard {
                 }
                 System.out.println("Score: "+score+"/"+round+"\n");
             }
-            else {
+            else if(numb.equals("2")) {
                 if (!playerPoint)
                 {
                     do{card2 = random.nextInt(8)+2;}while(card2<=card1);

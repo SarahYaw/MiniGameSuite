@@ -25,7 +25,7 @@ public class rockpaperscissors {
             if (playerPoint)
                 score++;
             //take in user input
-            System.out.println("Choose:\n" + "1 -  Rock\n" + "2 - Paper\n" + "3 - Scissors");
+            System.out.println("Choose:\n" + "1 - Rock\n" + "2 - Paper\n" + "3 - Scissors");
             //adapt output to user input and score
             switch (keyIn.nextLine()) {
                 case "1" -> {
